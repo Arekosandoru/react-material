@@ -1,0 +1,30 @@
+{
+    "name": "react-material",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "classnames": "^2.2.5",
+        "gh-pages": "^1.1.0",
+        "material-ui": "^1.0.0-beta.38",
+        "material-ui-icons": "^1.0.0-beta.36",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-scripts": "1.1.1"
+    },
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start-js": "react-scripts start",
+        "start": "npm-run-all -p watch-css start-js",
+        "build": "react-scripts build",
+        "build-css": "node-sass-chokidar src/ -o src/",
+        "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "node-sass-chokidar": "^1.2.0",
+        "npm-run-all": "^4.1.2"
+    },
+    "homepage": "https://arekosandoru.github.io/react-material"
+}
