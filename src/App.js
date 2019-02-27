@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import createMuiTheme from "material-ui/styles/createMuiTheme";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 
 import Navbar from "./features/Navbar/Navbar";
 import Example from "./features/Example/Example";
